@@ -1,15 +1,14 @@
-가장 먼저 로컬에 github config 설정
+## 초기 세팅
+
+### Github config
+
 참고 : https://www.lainyzine.com/ko/article/how-to-set-git-repository-username-and-email/
 
 <br><br>
 
-### 1. 레포 클론
+### 1. 레포 fork
 
-코드 작업 디렉토리에 가서
-
-```
-git clone https://github.com/JibJiby/capstone-back.git
-```
+참고 : https://data-make.tistory.com/228
 
 ### 2. 패키지 설치
 
@@ -28,6 +27,8 @@ npm install
 CREATE DATABASE capstone;
 ```
 
+<br>
+
 #### .env 값 세팅
 
 .fakeenv에 있는 내용 그대로 복사해서 `.env` 파일을 생성 (프로젝트 최상단에)
@@ -45,3 +46,6 @@ COOKIE_SECRET=capstoneback!
 ```
 
 DB_PASSWORD는 Mysql server 설치하면서 입력한 비밀번호 입력
+port는 기본 포트로 사용(3306)
+
+<br><br>
