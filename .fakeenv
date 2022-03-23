@@ -1,5 +1,5 @@
-DB_USERNAME=
+DB_USERNAME=root
 DB_PASSWORD=
-DB_HOST=
-DB_NAME=
-COOKIE_SECRET=
+DB_HOST=localhost
+DB_NAME=capstone
+COOKIE_SECRET=capstoneback!

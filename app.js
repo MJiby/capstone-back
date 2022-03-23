@@ -13,11 +13,16 @@ dotenv.config();
 const app = express();
 db.sequelize
     .sync(
-        { force: true } // 시작할때마다 모두 지우고 새로 만들기
+        { force: process.env.DB_SYNC || true } // 시작할때마다 모두 지우고 새로 만들기
         // { force: process.env.NODE_ENV !== 'production' }
         // { force: process.env.NODE_DB_CLEANER }
     )
     .then(() => {
+        if (process.env.DB_SYNC) {
+            console.log('#'.repeat(70));
+            console.log('DB 초기화 되었습니다.');
+            console.log('#'.repeat(70));
+        }
         console.log('DB 연결 성공');
     })
     .catch(console.error);

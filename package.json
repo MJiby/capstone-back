@@ -4,7 +4,8 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "node app.js",
+        "sync": "DB_SYNC=true node app.js"
     },
     "keywords": [],
     "author": "",
